@@ -138,7 +138,7 @@ footer{text-align:center;padding:0 6vw 5vh;font-size:.95rem;color:#35505e;text-s
   </section>
 </main>
 
-<footer>© 2026 <span class="zh">你的姓名</span><span class="en">Your Name</span></footer>
+<footer>© 2026 <span class="zh">Warren</span><span class="en">Your Name</span></footer>
 
 <script>
 const P=document.getElementById('paint'),L=document.getElementById('light'),pc=P.getContext('2d'),lc=L.getContext('2d');
@@ -252,7 +252,7 @@ addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{if(innerWidth
 size();if(!still)requestAnimationFrame(frame);
 
 /* 中英文切换 */
-const T={zh:'你的姓名 | 学术主页',en:'Your Name | Academic Homepage'},btns=document.querySelectorAll('.lang button');
+const T={zh:'By Warren',en:'By Warren'},btns=document.querySelectorAll('.lang button');
 function setLang(l,save){
   document.documentElement.lang=l==='en'?'en':'zh-CN';document.title=T[l];
   btns.forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===l));
